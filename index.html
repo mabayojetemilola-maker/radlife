@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Radilife – Electrical Infrastructure Solutions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="20" cy="20" r="20" fill="#0077C8"/>
+          <path d="M12 28V12h8.5c3.2 0 5.2 1.9 5.2 4.6 0 2.1-1.2 3.6-3.1 4.2L28 28h-4.2l-4.6-6.8H16.5V28H12zm4.5-10.5h3.6c1.4 0 2.2-.7 2.2-1.8s-.8-1.8-2.2-1.8h-3.6v3.6z" fill="white"/>
+          <path d="M22 8c2.5 3 4 6.5 4 10.5 0 1.5-.2 2.9-.6 4.2" stroke="#00A651" stroke-width="2.2" stroke-linecap="round"/>
+        </svg>
+        <span>RADI<span class="green">LIFE</span></span>
+      </a>
+
+      <nav class="desktop-nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="header-right">
+        <a href="tel:+2348034446191" class="phone-link">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328z"/></svg>
+          +234 803 444 6191
+        </a>
+        <a href="contact.html" class="btn btn-green" style="padding: 10px 18px; font-size: 0.9rem;">Get a Quote</a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="overlay" id="overlay"></div>
+  <nav class="mobile-menu" id="mobileMenu">
+    <a href="index.html" class="active">Home</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+    <a href="tel:+2348034446191" style="color: var(--green); margin-top: 20px;">Call +234 803 444 6191</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <h1>Reliable Electrical<br>Infrastructure Solutions</h1>
+          <p>Radilife delivers professional installation, maintenance, and power distribution services for homes, businesses, and communities across Nigeria.</p>
+          <ul class="hero-list">
+            <li>Electrical Installations & Supplies</li>
+            <li>Street Lighting Poles & MV Panels</li>
+            <li>Solar & Power Infrastructure</li>
+            <li>High Tension Materials & Cabling</li>
+          </ul>
+          <div class="hero-btns">
+            <a href="tel:+2348034446191" class="btn btn-primary">CALL: +234 803 444 6191</a>
+            <a href="contact.html" class="btn btn-outline">REQUEST A QUOTE</a>
+          </div>
+        </div>
+
+        <div class="booking-card">
+          <h3>Request a Free Quote</h3>
+          <p>Tell us about your project and our team will get back to you quickly.</p>
+          <form onsubmit="event.preventDefault(); alert('Thank you! Radilife will contact you shortly.');">
+            <div class="form-row">
+              <div class="form-group">
+                <input type="text" placeholder="Full Name" required />
+              </div>
+              <div class="form-group">
+                <input type="tel" placeholder="Phone Number" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="Email (optional)" />
+            </div>
+            <div class="form-group">
+              <textarea placeholder="Describe your project or needs..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-green">SEND REQUEST</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="why">
+    <div class="container text-center">
+      <span class="section-label">Why Radilife</span>
+      <h2 class="section-title">Why Choose Us?</h2>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon">⚡</div>
+          <h3>Technical Expertise</h3>
+          <p>We combine technical expertise with professional consultancy to deliver practical and efficient solutions across the electricity distribution sector.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">🛡️</div>
+          <h3>Safety & Quality</h3>
+          <p>Safety and reliability are fundamental. We promote safe working practices and apply quality control measures throughout our operations.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">🤝</div>
+          <h3>Customer Focus</h3>
+          <p>Clear communication, responsive service, and timely delivery. We keep clients informed and deliver within agreed timelines and budgets.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section>
+    <div class="container text-center">
+      <span class="section-label">Simple Process</span>
+      <h2 class="section-title">How It Works</h2>
+      <div class="how-grid">
+        <div class="how-card">
+          <div class="how-num">1</div>
+          <h3>Contact Us</h3>
+          <p>Call, WhatsApp, or fill the form to tell us about your electrical project or supply needs.</p>
+        </div>
+        <div class="how-card">
+          <div class="how-num">2</div>
+          <h3>Get a Clear Quote</h3>
+          <p>We assess requirements and provide a transparent quotation with timeline and scope.</p>
+        </div>
+        <div class="how-card">
+          <div class="how-num">3</div>
+          <h3>Professional Delivery</h3>
+          <p>Our team executes the work safely and professionally, keeping you updated throughout.</p>
+        </div>
+      </div>
+      <div style="margin-top: 40px;">
+        <a href="contact.html" class="btn btn-green">REQUEST A QUOTE</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES PREVIEW -->
+  <section class="why">
+    <div class="container text-center">
+      <span class="section-label">What We Offer</span>
+      <h2 class="section-title">Our Products & Services</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-img">
+            <img src="images/IMG_20261024_160137_027.jpg" alt="Solar installation" />
+          </div>
+          <div class="service-body">
+            <h3>Electrical Installations</h3>
+            <p>Professional installation and maintenance of electrical systems for homes, businesses and infrastructure.</p>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-img">
+            <img src="images/IMG_20261024_160136_867.jpg" alt="Street lighting poles" />
+          </div>
+          <div class="service-body">
+            <h3>Street Lighting Poles</h3>
+            <p>Galvanized steel reinforced street lighting poles and related infrastructure supplies.</p>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-img">
+            <img src="images/IMG_20261024_160145_474.jpg" alt="MV panels" />
+          </div>
+          <div class="service-body">
+            <h3>MV Panels & Switchgear</h3>
+            <p>Medium voltage panels, switchgear and high tension materials for reliable power distribution.</p>
+          </div>
+        </div>
+      </div>
+      <div style="margin-top: 40px;">
+        <a href="services.html" class="btn btn-outline">View All Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="container">
+      <h2>Powering Progress. Connecting Possibilities.</h2>
+      <p>Ready to discuss your next electrical project? Contact Radilife today.</p>
+      <div class="cta-btns">
+        <a href="tel:+2348034446191" class="btn btn-primary">CALL: +234 803 444 6191</a>
+        <a href="https://wa.me/2348034446191" class="btn btn-green" target="_blank" rel="noopener">WhatsApp Us</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <svg viewBox="0 0 40 40" fill="none" width="32" height="32"><circle cx="20" cy="20" r="20" fill="#0077C8"/><path d="M12 28V12h8.5c3.2 0 5.2 1.9 5.2 4.6 0 2.1-1.2 3.6-3.1 4.2L28 28h-4.2l-4.6-6.8H16.5V28H12zm4.5-10.5h3.6c1.4 0 2.2-.7 2.2-1.8s-.8-1.8-2.2-1.8h-3.6v3.6z" fill="white"/><path d="M22 8c2.5 3 4 6.5 4 10.5 0 1.5-.2 2.9-.6 4.2" stroke="#00A651" stroke-width="2.2" stroke-linecap="round"/></svg>
+            <span>RADI<span class="green">LIFE</span></span>
+          </a>
+          <p>Providing reliable electrical infrastructure solutions through professional installation, maintenance, and power distribution services.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="about.html">About</a>
+          <a href="faq.html">FAQ</a>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <a href="services.html">Electrical Installations</a>
+          <a href="services.html">Street Lighting Poles</a>
+          <a href="services.html">MV Panels & Switchgear</a>
+          <a href="services.html">Solar Solutions</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <a href="tel:+2348034446191">+234 803 444 6191</a>
+          <a href="contact.html">Get a Quote</a>
+          <a href="contact.html">Our Location</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Radilife. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/2348034446191" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
